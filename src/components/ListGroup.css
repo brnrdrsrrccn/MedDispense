@@ -1,0 +1,376 @@
+.list{
+    background: linear-gradient(to top right, #6ebd9b, #157145);
+    width: 70%;
+    height: 100%;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    border-radius: 25px;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+
+.list-group button {
+    display: inline-block;
+    padding-top: 20px;
+    margin-right: 52.5px;
+    background-color: transparent;
+    border-color: transparent;
+    width: 165px;
+    height: 136px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+.list-group button:hover{
+    transform: scale(1.1);
+}
+
+.payment button {
+    all: unset;
+    display: inline-block;
+    position: relative;
+    padding: 0.6em 2em;
+    border: rgb(0, 0, 0) solid 0.15em;
+    border-radius: 0.25em;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 100;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms;
+    user-select: none;
+    margin-right: 52.5px;
+    background: linear-gradient(to top right, #157145, rgb(85, 201, 149));
+    width: 290px;
+    text-align: center;
+  }
+  
+  .payment button p {
+    z-index: 1;
+  }
+  
+  .payment button:hover {
+    color: #6ae3a6;
+  }
+  
+  .payment button:active {
+    border-color: teal;
+  }
+  
+  .payment button::after, .payment button::before {
+    content: "";
+    position: absolute;
+    width: 9em;
+    aspect-ratio: 1;
+    background: rgb(149, 203, 183);
+    opacity: 50%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+  }
+  
+  .payment button::before {
+    left: 0;
+    transform: translateX(-8em);
+  }
+  
+  .payment button::after {
+    right: 0;
+    transform: translateX(8em);
+  }
+  
+  .payment button:hover:before {
+    transform: translateX(-1em);
+  }
+  
+  .payment button:hover:after {
+    transform: translateX(1em);
+  }
+  
+  .payment button:active:before,
+  .payment button:active:after {
+    background: teal;
+  }
+
+h1, h3{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+
+.searchBar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 8px;
+    margin-top: 105px;
+    padding-top: -10px;
+    border-radius: 25px;
+    height: 15%;
+    width: 28%;
+    background: linear-gradient(to top right, #6ebd9b, #157145);
+    
+}
+
+.form button {
+    border: none;
+    background: none;
+    color: #000000;
+  }
+  /* styling of whole input container */
+  .form {
+    --timing: 0.3s;
+    --width-of-input: 200px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #ffffff;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    width: 290px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg,#fff);
+  }
+  /* styling of Input */
+  .input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    text-shadow: 
+    -1px -1px 0 rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+    1px 1px 0 rgb(255, 255, 255);
+  }
+  /* styling of animated border */
+  .form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+  }
+  /* Hover on Input */
+  
+  
+  input:focus {
+    outline: none;
+  }
+  /* here is code of animated border */
+  .form:focus-within:before {
+    transform: scale(1);
+  }
+  /* styling of close button */
+  /* == you can click the close button to remove text == */
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* close button shown when typing */
+  input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* sizing svg icons */
+  .form svg {
+    width: 17px;
+    margin-top: 3px;
+  }
+
+.quantity{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 8px;
+    margin-top: 222px;
+    padding-top: -10px;
+    border-radius: 25px;
+    height: 34%;
+    width: 28%;
+    background: linear-gradient(to top right, #6ebd9b, #157145);
+    
+}
+
+.label{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 25px; 
+    border-radius: 25px;
+    height: 35%;
+    width: 90%;
+    background: white;
+    
+}
+
+.label h1{
+    font-family: 'Inter', sans-serif;
+    color:#000000;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    text-shadow: 
+    -1px -1px 0 rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+    1px 1px 0 rgb(255, 255, 255);
+}
+
+.quantity-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 125px; 
+    border-radius: 25px;
+    height: 30%;
+    width: 90%;
+    background: white;
+}
+
+.qtybtn-1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 285px;
+    margin-top: 12px; 
+    border-radius: 100px;
+    background: white;
+    font-family: 'inter', sans-serif;
+    font-size: 28px;
+}
+
+.qtybtn-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 25px;
+    margin-top: 12px; 
+    border-radius: 100px;
+    background: white;
+    font-family: 'inter', sans-serif;
+    font-size: 28px;
+}
+
+.quantity-btn button:hover{
+    background: #000000;
+    color: white;
+}
+
+
+.txtarea{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 70px;
+    margin-top: 12px; 
+    border-radius: 25px;
+    background: white;
+    width: 57.5%;
+    height: 50%;
+    font-family: 'inter', sans-serif;
+    font-size: 28px;
+}
+
+.moneyChanger{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 8px;
+    margin-top: 465px; 
+    border-radius: 25px;
+    width: 28%;
+    height: 67.5%;
+    background: linear-gradient(to top right, #6ebd9b, #157145);
+}
+
+.mc1, .mc2, .mc3{
+    position:relative;
+    width: 80%;
+    margin-left: 30px;
+    border-radius: 25px;
+}
+
+.confirm, .cancel{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-left: 25px;
+    width: 38%;
+    height: 8%;
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.confirm{
+    background-color:#e6ecc4;
+}
+
+.confirm:hover{
+    background-color:#6ae3a6;
+    color:#000000;
+    text-shadow: 
+    -1px -1px 0 rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+    1px 1px 0 rgb(255, 255, 255);
+}
+
+.cancel{
+    background-color: rgb(255, 147, 147);
+    color:#000000;
+    text-shadow: 
+    -1px -1px 0 rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+    1px 1px 0 rgb(255, 255, 255);
+}
+
+.cancel:hover{
+    background-color: rgb(71, 2, 2);
+    color:white;
+    text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}

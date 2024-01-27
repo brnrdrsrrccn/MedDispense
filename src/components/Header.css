@@ -1,0 +1,51 @@
+
+.head{
+    background: linear-gradient(to top right, #157145, rgb(85, 201, 149));
+    padding: 40px;
+    border-radius: 15px;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.logo{
+    position: absolute;
+    top: 25px;
+    left: 50px;
+}
+
+.title{
+    position: absolute;
+    top: 10px;
+    left: 125px;
+}
+
+.day{
+    position: absolute;
+    top: 5px;
+    right: 155px;
+}
+
+.date{
+    position: absolute;
+    top: 30px;
+    right: 150px;
+}
+
+.time{
+    position: absolute;
+    top: 18px;
+    right: 40px;
+}
+
+.divider{
+    font-size: 50px;
+    font-weight: 100;
+    position: absolute;
+    top: -15px;
+    right:125px;
+}
